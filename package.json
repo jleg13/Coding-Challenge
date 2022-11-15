@@ -1,0 +1,47 @@
+{
+  "name": "jlegresley-shorthand-engineer-test-solution",
+  "version": "1.0.0",
+  "description": "## A take-home challenge for software engineers.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "dev": "nodemon ./index.js",
+    "test": "jest",
+    "serve": "node test/server.js"
+  },
+  "jest": {
+    "preset": "jest-puppeteer",
+    "globals": {
+      "PATH": "http://localhost:4444"
+    },
+    "testMatch": [
+      "**/test/**/*.test.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jleg13/jlegresley-shorthand-engineer-test-solution.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jleg13/jlegresley-shorthand-engineer-test-solution/issues"
+  },
+  "homepage": "https://github.com/jleg13/jlegresley-shorthand-engineer-test-solution#readme",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "jest": "^27.4.3",
+    "jest-cli": "^27.4.3",
+    "jest-puppeteer": "^6.0.2",
+    "nodemon": "^2.0.15",
+    "puppeteer": "^12.0.1",
+    "webpack": "^5.64.4",
+    "webpack-dev-middleware": "^5.2.2"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10",
+    "express-validator": "^6.13.0"
+  }
+}
