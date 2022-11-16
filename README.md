@@ -29,8 +29,8 @@ To run you need [node.js](https://nodejs.org/en/)
 
     ```npm start```
     
-- Open up a browser and go to: http://localhost:8000?u=**url**
-  replacing **url** with your desired url to perform analysis
+- Open up a browser and go to: http://localhost:8000?u=*URL*
+  replacing **URL** with your desired url to perform analysis
 
 - In the test folder I have a html that is the structure of the challenges example, this can be run on a localhost (here my VScode had live server open on 5500) so I could test using the following url:
   http://localhost:8000?u=http://127.0.0.1:5500/tests/mocksite.html
