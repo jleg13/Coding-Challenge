@@ -3,14 +3,19 @@
 ## Semantic structure from heading elements and semantic-structural incongruence in web pages
 
 ## Description
+
 - The goal of this challenge is to identify the semantic structure of a web page from the heading elements in the page.
-- In my solution I aimed traverse the DOM in the most efficient way I could to firstly scrape the heading elements and then traverse the whole DOM searching for the structual elements. The BFS allows a systematic layer by layer analysis of finding structual elements and headings at each hierarchical level. BFS will be a computation complexity of O(n).
+- In my solution I aimed traverse the DOM in the most efficient way I could to firstly scrape the heading elements and then traverse the whole DOM searching for the structual elements. The BFS allows a systematic layer by layer analysis of finding structual elements and headings at each hierarchical level. BFS will be a computation complexity of O(n). 
+
+Frameworks include:
+
+- Axios library is used to make the web request to the url 
+- Cheerio parses the retrieved html and allows it to be traversed (lighter weight option over others like puperteer and jsdom). However to perform the same task on dynamically generated sites Puperteer would be a better option.
 
 ## Built With
 
-- JavaScript
-- Axios library is used to make the web request to the url 
-- Cheerio parses the retrieved html and allows it to be traversed (lighter weight option over others like puperteer and jsdom). However to perform the same task on dynamically generated sites Puperteer would be a better option.
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 
 ## Requirments
 To run you need [node.js](https://nodejs.org/en/)
@@ -23,8 +28,9 @@ To run you need [node.js](https://nodejs.org/en/)
     and then:
 
     ```npm start```
-- Open up a browser and go to: http://localhost:8000?u=***url***
-  replacing ***url*** with your desired url to perform analysis
+    
+- Open up a browser and go to: http://localhost:8000?u=**url**
+  replacing **url** with your desired url to perform analysis
 
 - In the test folder I have a html that is the structure of the challenges example, this can be run on a localhost (here my VScode had live server open on 5500) so I could test using the following url:
   http://localhost:8000?u=http://127.0.0.1:5500/tests/mocksite.html
