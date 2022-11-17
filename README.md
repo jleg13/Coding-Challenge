@@ -2,7 +2,7 @@
 
 ## Semantic structure from heading elements and semantic-structural incongruence in web pages
 
-## Description
+## Description:
 
 - The goal of this challenge is to identify the semantic structure of a web page from the heading elements in the page.
 - In my solution I aimed traverse the DOM in the most efficient way I could to firstly scrape the heading elements and then traverse the whole DOM searching for the structual elements. The BFS allows a systematic layer by layer analysis of finding structual elements and headings at each hierarchical level. BFS will be a computation complexity of O(n). 
@@ -12,15 +12,15 @@ Frameworks include:
 - Axios library is used to make the web request to the url 
 - Cheerio parses the retrieved html and allows it to be traversed (lighter weight option over others like puperteer and jsdom). However to perform the same task on dynamically generated sites Puperteer would be a better option.
 
-## Built With
+## Built With:
 
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 
-## Requirments
+## Requirments:
 To run you need [node.js](https://nodejs.org/en/)
 
-## Instructions
+## Instructions:
 - Clone repository cd into the directory and run the commands:
 
     ```npm install```
@@ -35,7 +35,7 @@ To run you need [node.js](https://nodejs.org/en/)
 - In the test folder I have a html that is the structure of the challenges example, this can be run on a localhost (here my VScode had live server open on 5500) so I could test using the following url:
   http://localhost:8000?u=http://127.0.0.1:5500/tests/mocksite.html
 
-### Background (Detailed explanation of the challenge)
+### Background (Detailed explanation of the challenge):
 
 In web pages, heading elements (`h1-h6`) are used to impose semantic structure on the content appearing in the page. They can be used to break an article into chapters or sections, with `h1` being a top-level heading, `h2` being the heading one level down and so on. In other words the semantics of the heading elements arise from the weight they carry in relation to one another. However, there is no explicit containment hierarchy between these headings. Thus, it is the responsibility of the page author or generator to use heading elements in a semantically appropriate way.
 
